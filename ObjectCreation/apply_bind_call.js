@@ -8,7 +8,9 @@ var person = {
 }
 
 person.hello("world");  // output: "James Smith says hello world"
+
 person.hello.call({ name: "Jim Smith" }, "world"); // output: "Jim Smith says hello world"
+
 person.hello.apply({ name: "John Smith" }, ["world"]); // output: "John Smith says hello world"
 
 var helloFunc = person.hello.bind({ name: "Job Smith" }, "world");
